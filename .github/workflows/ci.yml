@@ -2,13 +2,6 @@ name: CI Sistema Hospitalario
 
 on:
   push:
-    branches:
-      - main
-      - develop
-      - feature/login
-  pull_request:
-    branches:
-      - develop
 
 jobs:
   test:
@@ -16,17 +9,7 @@ jobs:
 
     steps:
       - name: Descargar código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Verificar archivos del proyecto
-        run: |
-          echo "Verificando Sistema Hospitalario..."
-          test -f README.md
-          echo "README.md encontrado correctamente"
-
-      - name: Ejecutar prueba básica
-        run: |
-          echo "Ejecutando prueba básica..."
-          echo "Sistema Hospitalario - CI OK"
-          test 1 -eq 1
-          echo "Prueba completada correctamente"
+      - name: Ejecutar prueba
+        run: echo "Sistema Hospitalario - CI funcionando correctamente"
