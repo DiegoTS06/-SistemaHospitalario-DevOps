@@ -18,3 +18,7 @@ Desarrollar una pequeña base para un sistema hospitalario y aplicar buenas prá
 - main: versión principal del proyecto.
 - develop: rama de desarrollo.
 - feature/login: rama para desarrollar el inicio de sesión
+
+## Flujo de trabajo
+
+Los cambios se desarrollan en ramas independientes y posteriormente se integran mediante Pull Requests hacia la rama develop.
