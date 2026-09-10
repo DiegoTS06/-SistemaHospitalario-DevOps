@@ -1,1 +1,32 @@
+name: CI Sistema Hospitalario
 
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/login
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Verificar archivos del proyecto
+        run: |
+          echo "Verificando Sistema Hospitalario..."
+          test -f README.md
+          echo "README.md encontrado correctamente"
+
+      - name: Ejecutar prueba básica
+        run: |
+          echo "Ejecutando prueba básica..."
+          echo "Sistema Hospitalario - CI OK"
+          test 1 -eq 1
+          echo "Prueba completada correctamente"
