@@ -13,3 +13,8 @@ Desarrollar una pequeña base para un sistema hospitalario y aplicar buenas prá
 - GitHub Flow
 - Markdown
 
+## Ramas
+
+- main: versión principal del proyecto.
+- develop: rama de desarrollo.
+- feature/login: rama para desarrollar el inicio de sesión
